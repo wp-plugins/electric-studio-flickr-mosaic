@@ -19,8 +19,8 @@ When the images are enlarged, next and previous arrows can be used to cycle thro
 
 To use the plugin:
 1. Install the .zip file into wordpress
-1. Activate the plugin
-1. insert the following code where you want the plugin to output to:
+2. Activate the plugin
+3. insert the following code where you want the plugin to output to:
 
 `<?php if(function_exists('ES_fm_show')) {ES_fm_show();}?>`
 
