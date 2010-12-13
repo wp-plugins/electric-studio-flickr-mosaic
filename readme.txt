@@ -18,11 +18,7 @@ To use the plugin:
 1. Activate the plugin
 1. insert the following code where you want the plugin to output to:
 
-//<?php
-//if(function_exists('ES_fm_show')) {
-//ES_fm_show();
-//}
-//?>
+`<?php if(function_exists('ES_fm_show')) {ES_fm_show();}?>`
 
 == Frequently Asked Questions ==
 
