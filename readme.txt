@@ -11,6 +11,10 @@ Add a mosaic from a flickr feed on your blog
 
 Add a mosaic from a flickr feed on your blog. All you have to do is put your flickr RSS feed in the admin page and then you can place the mosaic wherever you want on your site/blog.
 
+The plugin displays thumbnails from your flickr feed and uses 'fancybox' to display a larger version of the image without having to leave your website.
+
+When the images are enlarged, next and previous arrows can be used to cycle through the images.
+
 == Installation ==
 
 To use the plugin:
