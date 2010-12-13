@@ -99,7 +99,7 @@ function ES_fm_show()
             $image_url[0] = preg_replace('/_t.jpg/','_b.jpg', $image_url[0]);
             
             //change the flickr url to the url of the image        
-            $temp = preg_replace('/http:\/\/www.flickr.com\/[A-Za-z0-9_.\/]*\/lightbox\//',''.$image_url[0].' rel="flickrfeed"',$temp);      
+            $temp = preg_replace('/http:\/\/www.flickr.com\/[A-Za-z0-9@_.\/]*\/lightbox\//',''.$image_url[0].' rel="flickrfeed"',$temp);      
 
             //add image to the array
             array_push($images, $temp);
