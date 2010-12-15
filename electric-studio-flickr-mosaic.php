@@ -26,7 +26,7 @@ function add_my_script() {
 
 //this functions is to add all the required stylesheets
 function add_my_style() {
-  wp_enqueue_style('mosaic', plugin_dir_url(__FILE__).'css/mosaic.css',array(),'1.0','all');
+  wp_enqueue_style('mosaic', plugin_dir_url(__FILE__).'css/mosaic.php',array(),'1.0','all');
   wp_enqueue_style('jquery.fancybox-1.3.4', plugin_dir_url(__FILE__).'js/fancybox/jquery.fancybox-1.3.4.css',array(),'1.3.4','all');  
 }
 
@@ -45,6 +45,16 @@ function ES_fm_show()
     $rssflickr->stripHTML = false;
 
     $flickrrssurl = get_option('ES_flickr_mosaic_data');
+
+    $img_height = get_option('ES_flickr_mosaic_img_height');
+    $img_width = get_option('ES_flickr_mosaic_img_width');
+
+    if($img_height!=""){
+      $img_height = " height=\"".$img_height."px\"";
+    }
+    if($img_width!=""){
+      $img_width = " width=\"".$img_width."px\"";
+    }
 
     //initiate array of images
     $images = array();
@@ -84,7 +94,7 @@ function ES_fm_show()
             //get thumbnails instead of medium sized images
             $temp = preg_replace('/_m.jpg/','_t.jpg', $temp);
 
-            $temp = str_replace('/></a>','class="'.$cssImgClass.'"/></a>',$temp);
+            $temp = str_replace('/></a>','class="'.$cssImgClass.'"'.$img_height.$img_width.'/></a>',$temp);
 
             //$temp = preg_replace('/<a href="http[0-9a-zA-z:\/]*"/','hello',$temp);
             $temp = preg_replace("#((http|https|ftp)://(www.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#ie",
@@ -111,19 +121,10 @@ function ES_fm_show()
 
     echo "<ul id=".$cssUlId.">\n";
     foreach($images as $image){
-        echo "\t<li>".$image."\n\t</li>\n";
+        echo "\t<li".$img_height.$img_width.">".$image."\n\t</li>\n";
     }
     echo "</ul>";
 
-  //This following commented out lines is to output the images into firebug's console
-  //
-  //echo '<script type="text/javascript">';
-  //$counter=0;
-  //foreach($images as $image){
-  //  $counter++;
-  //  echo 'console.log(\''.$counter.' - '.preg_replace(array('/</','/>/','/\n/'),array('!lt!','!gt!',''),$image). '\');';
-  //}
-  //echo '</script>';
 
 }
 
