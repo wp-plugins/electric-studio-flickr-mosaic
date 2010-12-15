@@ -3,7 +3,7 @@ Contributors: irvingswiftj
 Tags: flickr, rss, mosaic
 Requires at least: 3.0
 Tested up to: 3.0.3
-Stable tag: 1.0
+Stable tag: 1.1
 
 Add a mosaic from a flickr feed on your blog
 
@@ -46,9 +46,14 @@ This is planned for version 2
 = 1.0 =
 Version 1!
 
+= 1.1 =
+Thumbnail sizes can now be change in the admin panel
+Bug fixed on problems with some Flickr RSS urls
+
 == Upgrade Notice ==
 
 = 1.0 =
 Version 1!
 
-
+= 1.1 =
+Bug fix and an enhancement
