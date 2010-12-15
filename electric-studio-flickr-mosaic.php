@@ -3,7 +3,7 @@
 Plugin Name: Electric Studio flickr Mosaic
 Plugin URI: http://www.electricstudio.co.uk
 Description: Creates a mosaic of images from the a flickr feed.
-Version: 1.0
+Version: 1.1
 Author: James Irving-Swift
 Author URI: http://www.irving-swift.com
 License: GPL2
