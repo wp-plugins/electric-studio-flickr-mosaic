@@ -3,7 +3,7 @@ Contributors: irvingswiftj
 Tags: flickr, rss, mosaic
 Requires at least: 3.0
 Tested up to: 3.0.3
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 Add a mosaic from a flickr feed on your blog
 
