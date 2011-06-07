@@ -50,6 +50,9 @@ Version 1!
 Thumbnail sizes can now be change in the admin panel
 Bug fixed on problems with some Flickr RSS urls
 
+= 1.1.1 =
+* Shortcode [es_flickr_mosaic] now included
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -57,3 +60,6 @@ Version 1!
 
 = 1.1 =
 Bug fix and an enhancement
+
+= 1.1.1 =
+* Shortcode [es_flickr_mosaic] now included
