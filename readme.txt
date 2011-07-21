@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: irvingswiftj
+Contributors: irvingswiftj, Electric Studio
 Tags: flickr, rss, mosaic
 Requires at least: 3.0
 Tested up to: 3.0.3
